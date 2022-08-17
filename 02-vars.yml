@@ -43,3 +43,7 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL == {{ URL }}
+
+- name: variable from Roles
+  hosts: all
+  roles: sample
