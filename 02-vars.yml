@@ -13,7 +13,7 @@
 
 - name: demo on play var files
   hosts: all
-  vars-files: demo-vars.yml
+  vars_files: demo-vars.yml
   tasks:
     - name: Print URL
       ansible.builtin.debug:
