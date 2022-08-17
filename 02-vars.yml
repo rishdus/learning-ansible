@@ -28,3 +28,4 @@
       #vars_files:
       vars:
         URL: task.example.com
+## note : task level variables are limited to only that task
