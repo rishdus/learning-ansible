@@ -10,3 +10,11 @@
 ## In ansibel we access variable with two flower braces . {{URL}} , {{ URL }} ,that spacing helps in reading the code better way .
 # play variable declare on play means all tasks can access that variable
 # note : variable of on play cannot be accessed by another play
+
+- name: demo on play var files
+  hosts: all
+  vars-files: demo.vars.yml
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL =={{ URL }}
