@@ -48,3 +48,9 @@
   hosts: all
   roles:
     - sample
+
+- name: Print fact
+  hosts: all
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: Hostname == {{ ansibel_hostname }}
