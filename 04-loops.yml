@@ -2,9 +2,9 @@
   hosts: all
   tasks:
     - name: Fruit name
-        ansible.builtin.debug:
-          msg: Fruit Name = {{ item }}
-        loop:
-          - banana
-          - apple
-          - orange
+      ansible.builtin.debug:
+        msg: Fruit Name = {{ item }}
+      loop:
+        - banana
+        - apple
+        - orange
