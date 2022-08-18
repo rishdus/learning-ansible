@@ -14,3 +14,10 @@
       loop:
         - { name: banana, qty: 100 }
         - { name: apple, qty: 200 }
+    - name: Place the result of the current item in the variable
+      ansible.builtin.shell: echo "{{ item }}"
+      loop:
+        - one
+        - two
+      register: echo
+      changed_when: echo.stdout != "one"
