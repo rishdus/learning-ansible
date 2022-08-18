@@ -51,6 +51,7 @@
 
 - name: Print fact
   hosts: all
+  tasks:
     - name: Print URL
       ansible.builtin.debug:
         msg: Hostname == {{ ansibel_hostname }}
