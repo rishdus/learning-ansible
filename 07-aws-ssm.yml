@@ -10,4 +10,4 @@
           - boto3
 
     - name: lookup ssm parameter store in the current region
-      debug: msg="{{ lookup('aws_ssm', 'mutable.cart.dev.CATALOGUE_HOST' ) }}"
+      debug: msg="{{ lookup('aws_ssm', 'mutable.cart.dev.CATALOGUE_HOST', region='us-east-1' ) }}"
