@@ -1,0 +1,12 @@
+- name: Demo on tags
+  hosts: localhost
+  tasks:
+    - name: print yellow
+      debug:
+        msg: yellow
+      tags: yellow
+    - name: print blue
+      debug:
+        msg: blue
+      tags: blue
+
